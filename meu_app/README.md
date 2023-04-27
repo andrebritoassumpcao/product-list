@@ -1,10 +1,5 @@
-# Minha API
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
 
-O objetivo aqui é ilutsrar o conteúdo apresentado na primeira aula com um código simples.
-
----
 ## Como executar
 
 Será necessário ter todas as libs python listadas no `requirements.txt` instaladas, é bem simples o processo.
