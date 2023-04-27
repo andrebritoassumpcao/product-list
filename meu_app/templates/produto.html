@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Nome: {{ produto.nome }}</h1>
+    <p>Quantidade: {{ produto.quantidade }} </p>
+    <p>Valor: R$ {{ produto.valor }} </p>
+    <hr>
+    {% if produto.comentarios %}
+    <h2> Comentários </h2>
+    {% for comentario in produto.comentarios -%}
+    <p>{{ comentario.nome_autor }} - {{ comentario.texto }} - {{ comentario.n_estrela }} estrelas </p>
+    {% endfor %}
+    <hr>
+    {% endif %}
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/Front-end/styles/style.css">
+
+  <title>Projeto</title>
+</head>
+
+<body>
+  <header>
+    <h1>Lista de Compras</h1>
+  </header>
+
+  <section class="newItem">
+    <div class="container_input">
+      <input required type="text" id="newInput">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Digite o nome</label>
+    </div>
+    <div class="container_input">
+      <input type="text" id="newQuantity">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Quantidade</label>
+    </div>
+    <div class="container_input">
+      <input type="text" id="newPrice">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Valor</label>
+    </div>
+    <button class="addBtn">
+      <span onclick="newItem()">ADD</span>
+    </button>
+  </section>
+
+  <section class="items">
+    <table id="myTable">
+      <tr>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+        <th>Remover</th>
+
+      </tr>
+    </table>
+  </section>
+  <footer>
+
+  </footer>
+
+  <script src="/Front-end/scripts/script.js"></script>
+</body>
+
+</html>
